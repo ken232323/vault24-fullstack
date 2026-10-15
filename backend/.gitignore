@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+storage/*.sqlite*
+storage/logs/*
+!storage/logs/.gitkeep
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.log
+*.pem
+*.key
+*.dump
+*.sql.gz
+vendor/
+.idea/
+.vscode/

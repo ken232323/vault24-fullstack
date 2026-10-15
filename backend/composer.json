@@ -1,0 +1,14 @@
+{
+  "name": "vault24/secure-backend",
+  "description": "VAULT24 fictional digital-banking security challenge: secure backend prototype (no runtime dependencies)",
+  "type": "project",
+  "license": "proprietary",
+  "require": { "php": ">=8.2", "ext-pdo_sqlite": "*", "ext-mbstring": "*" },
+  "autoload": { "psr-4": { "Vault24\\": "src/" } },
+  "scripts": {
+    "migrate": "php bin/migrate.php",
+    "seed": "php bin/seed.php",
+    "serve": "php -S 127.0.0.1:8000 -t public public/index.php",
+    "test": "php tests/run.php"
+  }
+}
